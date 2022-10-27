@@ -1,0 +1,29 @@
+:root{
+    font-size: 25px;
+}
+
+@font-face  /*creare un font*/ {
+    font-family: FontPersonale;
+    src: url('../font/Roboto-Regular.ttf') format('truetype');
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#p1{
+    font-size:20px;
+}
+
+#p2{
+    font-size: 0.8rem;
+    font-family: FontPersonale;
+}
+
+#p3{
+    font-size: 50px;
+}
+
+#p3 span{
+    font-size: 1rem;/*prende il valore del padre ovvero 20 px*/
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="webfont">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document</title>
+</head>
+<body id="sfondo">
+    <header>
+        <div class="c1">
+            <img id="i1" src="logo.svg"><hr class="hr">
+            <p class="p">
+                EPICODE - IL BLOG DEI DEVELOPERS
+            </p>
+            <hr class="hr">
+            <ul id="ul2">
+                <li><a href="index.html" title="home">Home</a>
+                </li>
+                <li><a href="index.html" title="Articoli">Articoli</a></li>
+                <li><a href="index.html" title="Contatti">Contatti</a></li>
+            </ul>
+        </div>
+    </header>
+    
+        <div class="c2">
+            <p>Come creare un template per i post</p><hr class="hr">
+            <p id="opa"> <i  class=" fas fa-pen-square"></i> di Mario Rossi <i class="fas fa-clock"></i> Pubblicato il 25-10-2020</p>
+            <hr class="hr">
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <b>parti comuni</b> da applicare a tutte le pagine</p>
+            <hr class="hr">
+            <p>Le varie aree saranno quindi suddivise in :</p>
+            <ul id="ul">
+                <li>
+                    Contenuti di intestazione del tag 
+                    <div class="back">&#8826;header&#8827; </div>
+                </li>
+                <li>
+                    contenuti centrali variabili del C <div class="back"> &#8826;main&#8827; </div> (corpo principale)
+                </li>
+                <li>
+                    Contenuti di fine pagina comuni, da inserire nel tag <div class="back">&#8826;footer&#8827; </div>
+                </li>
+                <hr class="hr">
+                <p>Formattazione del codice il testo dell'articolo dovrò essere formattato per identificare tutte le parti da <b>selezionare con i CSS</b>. Perciò i passi saranno:</p>
+            </ul>
+            <hr class="hr">
+            <ol id="ol">
+                <li> Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                <li> Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                <li> Applicare gli stili CSS</li>
+            </ol>
+            <hr class="hr">
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.</p>
+            <hr class="hr">
+        
+            <table id="table">
+                <thead>
+                    <tr><th>Header</th><th>Header</th><th>Header</th></tr>
+                    </thead>
+                    <tr>
+                        <td>2000</td>
+                        <td>20%</td>
+                        <td>17%</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>2002</td>
+                        <td>35%</td>
+                        <td>22%</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td>
+                        <td>45%</td>
+                        <td>42%</td>
+                    </tr>
+                    <tr class="alt">
+                        <td>2008</td>
+                        <td>80%</td>
+                        <td>51%</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>100%</td>
+                        <td>76%</td>
+                    </tr>
+            </table>
+            <hr class="hr">
+            
+            <p>Un test di validazione potrà essere fatto tramite il <a href"></a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+            <hr class="hr">
+        <div>
+            <iframe id="v" width="560" height="315" src="https://www.youtube.com/embed/dvOvHXruEDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <hr class="hr">
+        <div class="riquadro">
+            <h2>Novità</h2>
+            <p>Vuoi rimanere aggiornato su altre novità dei blog? Iscriviti alla nostra newsletter:
+                <input required name="email" type="email" placeholder="Il tuo indirizzo mail">
+                <input id="iscriviti" type="submit" value="Iscriviti!">
+
+            </p>
+    
+        </div>
+        <hr class="hr">
+        <h2>ARTICOLI CORRELATI</h2>
+        <div class="riquadro"><a href="index.html" title="home">Validare il codice HTML</a>
+            <br>
+            <p>
+                <i class="fas fa-tag"></i>
+                Categoria: develop</p>
+                <p class="data"><i class="fas fa-calendar"></i> Data: 18-9-2020</p>
+        </div>
+        <hr class="hr">
+        <div class="riquadro"><a href="index.html" title="home">Correggere la sintassi</a>
+            <br>
+            <p>
+                <i class="fas fa-tag"></i>
+                Categoria: develop</p>
+                <p class="data"><i class="fas fa-calendar"></i> Data: 16-9-2020</p>
+        </div>
+        <hr class="hr">
+        <div class="riquadro"><a href="index.html" title="home">Meno kb nella pagina</a>
+            <br>
+            <p>
+                <i class="fas fa-tag"></i>
+                Categoria: ottimizzazione</p>
+                <p class="data"><i class="fas fa-calendar"></i> Data: 18-9-2020</p>
+        </div>
+        <hr class="hr">
+        <div id="riquadro2">
+            <h2>Blog Epicode &copy2021</h2>
+            <hr class="hr">
+            <p>Testata online di mario Rossi, registrata con prot. n213/2018 - via Luigi Einaudi 2 - Milano.<br>
+            P.IVA 001254866. <a href="info@epicode.school">info@epicode.school</a>
+            </p>
+
+        </div>
+        </div>
+
+
+    
+    
+</body>
+</html>

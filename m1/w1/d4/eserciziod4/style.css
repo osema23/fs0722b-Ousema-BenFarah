@@ -1,0 +1,112 @@
+#sfondo{
+    background-image: url(sfondo.png);
+    background-size: cover;
+    font-family: ;
+}
+
+.c1{
+    background-color: rgb(25, 87, 146);
+    align-items: center;
+    padding: 50px;
+    margin: 10px;
+}
+
+#i1{
+    
+   width: 70%;
+   display: block;
+   margin: 0 auto;
+    
+    
+}
+
+#ul2{
+    text-align: center;
+
+
+}
+.p{
+    text-align: center;
+}
+.hr{
+    clear: both;
+    visibility: hidden;
+}
+.c2{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 1%;
+    margin: 10px;
+    text-align: center;
+}
+#opa{
+    opacity:50%;
+}
+#ul{
+    list-style: inside;
+    padding-left: 20px;
+}
+.back{
+    width: 67px;
+    background-color: rgb(204, 197, 197);
+    border-radius: 20%;
+}
+#ol{
+    list-style: decimal;
+    padding-left: 20%;
+}
+#table{
+    border-bottom: 1px solid rgb(56,63,122);
+    margin: 0 auto;
+    height: 500px;
+    width: 90%;
+    border: 1 px solid #000;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(56, 63, 122);
+    border: 1px solid rgb(56, 63, 122);
+    color: rgb(255, 255, 255);
+    height: 70px;
+    text-align: center;
+}
+
+tr{
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    height: 50px;
+}
+tr.alt{
+    background-color: rgb(219, 208, 208);
+    height: 50px;
+}
+#v{
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+.riquadro{
+    background-color: rgb(223, 222, 222);
+    border: 1px solid rgb(209, 209, 209);
+    height: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+}
+.data{
+    text-align: end;
+}
+
+#riquadro2{
+    background-color: rgb(20, 64, 100);
+    padding: 10%;
+}
+h2{
+    text-align: center;
+}
+
+#iscriviti{
+    background-color: rgb(81, 81, 173);
+    color: white;
+}
