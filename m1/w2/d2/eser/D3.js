@@ -16,7 +16,10 @@ if (n1>n2){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+if(a!=5)
+{
+  console.log('not equal')
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
