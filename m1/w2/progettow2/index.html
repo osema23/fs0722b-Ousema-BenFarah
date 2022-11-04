@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calcolatrice">
+          <h1>Osema</h1>
+            <div id="interno">
+                <input id="schermo" type="text">
+        <div> 
+            <button data-simbol="7" onclick="aggcifra(this)">7</button>
+            <button data-simbol="8" onclick="aggcifra(this)">8</button>
+            <button data-simbol="9" onclick="aggcifra(this)">9</button>
+            <button data-simbol="/" onclick="aggcifra(this)">/</button>
+        </div>
+        <div>
+            <button data-simbol="4" onclick="aggcifra(this)">4</button>
+            <button data-simbol="5" onclick="aggcifra(this)">5</button>
+            <button data-simbol="6" onclick="aggcifra(this)">6</button>
+            <button data-simbol="*" onclick="aggcifra(this)">*</button>
+        </div>
+        <div>
+            <button data-simbol="3" onclick="aggcifra(this)">3</button>
+            <button data-simbol="2" onclick="aggcifra(this)">2</button>
+            <button data-simbol="1" onclick="aggcifra(this)">1</button>
+            <button data-simbol="-" onclick="aggcifra(this)">-</button>
+        </div>
+            <button data-simbol="c" onclick="cancella(this)">c</button>
+            <button data-simbol="0" onclick="aggcifra(this)">0</button>
+            <button data-simbol="=" onclick="operazione(this)">=</button>
+            <button data-simbol="+" onclick="aggcifra(this)">+</button>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
