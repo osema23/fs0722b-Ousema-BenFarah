@@ -1,0 +1,108 @@
+.quadrato{
+    width: 100px;
+    height: 100px;
+    background-color:red
+}
+
+#q2{
+    overflow: hidden;    
+}
+#q3{
+    overflow-y: auto;
+}
+
+#q4{
+    width: auto;
+    max-width: 600px;
+    margin-bottom:30px
+}
+
+#q5{
+    padding: 15px;
+    /*
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+
+    padding: 10px 20px; top bottom: 10, left right: 20
+
+    padding: 15px 5px 1px 15px; top right bottom left    
+    */
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+#q6{
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+
+/* pagina layout */
+
+
+.colonna{
+    width: calc(100% / 3 - 15px);
+    height: 200px;
+    background-color: bisque;
+    float: right;
+    border: 1px solid #000;
+}
+.clearfix{
+    clear: both;
+    visibility: hidden;
+}
+.img-right{
+    float: right;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.colonna.no-float{
+    float: none;
+    display: inline-block;
+    margin:5px 5px;
+}
+
+
+#q7{
+    border: 4px dashed #000;
+    outline: 5px dotted rgba(255, 0, 0, 0.203);
+    outline-offset: 5px;
+    border-bottom: none;
+    border-bottom-left-radius:50%;
+    border-top-right-radius:25%;
+    background-color: transparent
+}
+
+#q8{
+    background-color:green;
+    height: 100vh;
+}
+
+#q8 ul{
+    list-style:circle;
+    padding-left:20px
+}
+
+/*altre regole css*/
+#griglia-esperimenti .colonna:nth-of-type(4){
+    opacity: 0.5;
+    box-shadow: 3px 3px 5px #000, -3px -3px 5px rgb(255, 0, 0);
+}
+#griglia-esperimenti .colonna:nth-of-type(5){
+    visibility:hidden;
+}
+#griglia-esperimenti .colonna:nth-of-type(6){
+    display: none;
+}
+
+
+:target{
+    background-color:red;
+}

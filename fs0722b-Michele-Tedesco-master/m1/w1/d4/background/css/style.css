@@ -1,0 +1,44 @@
+#bg1{
+    background-image: url(../img/download1.jpg);/*310x163*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#bg2{
+    background-image: url(../img/download1.jpg);/*310x163*/
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-size: cover;
+    background-position: center;
+}
+#bg3{
+    background-image: url(../img/guida-html5-1200x1200.png);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-size: 25px;
+    background-position: center;
+}
+#bg4{
+    background-image: url(../img/guida-html5-1200x1200.png), url(../img/680323120190417827573.png);
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    background-size: 50px;
+    background-position: 0 150px, 150px 0;
+    background-repeat: no-repeat, repeat;
+}
+
+#bg5{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+img{
+    max-width:100%;
+}
+
