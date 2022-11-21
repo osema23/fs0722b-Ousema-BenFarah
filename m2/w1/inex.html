@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la  prorietà initial scale impsota il fattore di zoom iniziale (quando la pagina viene caricata)   
+        la proprietà user-scalable permette di consentire o meno all'utente può zoomare
+
+        viewport:
+    https://developer.apple.com/library/ios/DOCUMENTATION/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html
+    http://dev.opera.com/articles/view/an-introduction-to-meta-viewport-and-viewport/-->
+    <title>Media queries</title>
+    <style type="text/css">
+        body {background: red;}
+        @media screen and   (min-widht: 480px){
+            body {background: yellow;}
+                 }
+                 @media screen and   (min-widht: 768px){
+            body {background: green;}
+                 }
+                 @media screen and   (min-widht: 1024px){
+            body {background: blue;}
+                 }
+                 @media screen and   (min-widht: 1200px){
+            body {background: grey;}
+                 }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
