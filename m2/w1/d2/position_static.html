@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position static</title>
+    <style>
+        div.static{
+            position:static;
+            border: 3px solid green;
+            top: 100px; /*non andrà a cambiare nulla dato che position static serve per poaizionare un elemento nel posto in cui deve stare*/
+        }
+    </style>
+</head>
+<body>
+    <h2>Position static</h2>
+    <p>un elemento che position static non è posizionato in nessun modo speciale, è sempre posizionato secondo il flow della pagina</p>
+    <p>Gli elementi che hanno position static non sono influenzati da top,bottom,left,right</p>
+    <div class="static">io sono static</div>
+</body>
+</html>

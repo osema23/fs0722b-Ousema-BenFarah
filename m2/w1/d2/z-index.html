@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .container{
+            width:1024px;
+            margin:0 auto;
+            border:2px solid black;
+            position: relative;
+            height:800px;
+        }
+        .container div{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+        }
+        #blu{background-color: blue;top: 40px;left: 40px;z-index:2;}
+        #rosso{background-color: red;top: 20px;left: 20px;z-index:1}
+        #verde{background-color: green;top: 60px;left: 60px;z-index:3}
+        #yellow{background-color: yellow;top: 80px;left: 80px;z-index:4}
+        img{position:absolute; left:0;top: 0;z-index: -1;}
+        /*valori possibili
+        auto -> valore uguale a tutti i parents 
+        numero -> qualsiasi numero intero positivo o negativo
+        initial -> valore di default (0)
+        inherit -> eredita dal genitore*/
+    </style>
+</head>
+<body>
+    <h2>Z-index</h2>
+    <div class="container">
+        <div id="rosso"></div>
+        <div id="blu"></div>
+        <div id="verde"></div>
+        <div id="yellow"></div>
+    </div>
+    <img src="download.jpg" alt="#"><!--sto aggiungendo un'immagine che succesivamente andrò a posizionare sotto il quadrato rosso(1)-->
+
+</body>
+</html>
