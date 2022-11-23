@@ -1,0 +1,33 @@
+.nav{
+    background-color: rgb(228, 201, 127);
+    border-radius: 30px;
+    display: flex;
+}
+.nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex:3;
+}
+.l {background-color: rgb(207, 142, 57);
+border-radius: 30px;
+padding: 5px;
+margin: 30px;
+width: 100%;
+text-align: center;
+font-size: large;
+}
+#s{font-size: xx-large;
+height: 40px;
+background-color: rgb(207, 142, 57);
+border-radius: 30px;
+margin: 10px;
+width: 100%;
+padding:10px;
+text-align: center;
+}
+img{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
