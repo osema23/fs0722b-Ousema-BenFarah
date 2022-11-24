@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La proprietà transform</title>
+    <style>
+        /*https://developer.mozilla.org/en-US/docs/Web/CSS/transform*/
+        div.a {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: rotate(30deg);
+        }
+        div.b {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: skew(20deg,20deg); /*skewX | skewY*/
+        }
+        div.c {
+            width: 150px;
+            height: 80px;
+            background-color: yellow;
+            transform: scaleX(3.5); /*agisce solo sull'asse X e gli dico di ingrandire il div di 3 volte e mezzo.....scale(2.0) agisce su entrambi gli assi e gli sto dicendo di renderlo più grande di 2 volte*/
+        }
+        div.d {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotate(45deg) scale(0.3);
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>La proprietà transfrom</h2>
+    <h2>transform rotate</h2>
+    <div class="a">Rotate</div>
+    <h2>transform skew</h2>
+    <div class="b">Skew</div>
+    <h2>transform scale</h2>
+    <div class="c">scale</div>
+    <h2>Più trasformazioni in contemporanea</h2>
+    <div class="d">scale</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzisioni</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 6s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            /*transition: width 6s linear 2s; property duration timing-function delay*/
+        }
+        div:hover{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Specifico le proprietà della transizione una af una </h2>
+    <p>allo stato hover si attivano i diversi effetti della transizione</p>
+    <div></div>
+</body>
+</html>
