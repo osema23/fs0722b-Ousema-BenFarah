@@ -1,0 +1,17 @@
+.bottone1{
+    border-radius: $radius;
+    background-color: $giallo;
+    padding: $padding;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+.bottone2{
+    width: $grandezza;
+    border-radius: $radius;
+    background-color:violet;
+    padding: $padding;
+    &:hover{
+        transform: scale(1.2);
+    }
+}

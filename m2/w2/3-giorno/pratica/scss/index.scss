@@ -1,0 +1,35 @@
+@import 'variabili';
+@import 'bottoni';
+body{
+    background-color: rgb(211, 91, 91);
+}
+
+nav{
+    justify-content: space-between;
+    background-color: red;
+    display: flex;
+    img{
+        width: $grandezza;
+        height: $grandezza;
+        padding:$padding;
+    }
+     ul{
+        display: inherit;
+        list-style-type: none;
+        li{
+            padding: $padding;
+        }
+     }  
+}
+#flex{
+    display: flex;
+    margin: 20px;
+    .div1{
+        font-size: 1.4em;
+        h2{
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
