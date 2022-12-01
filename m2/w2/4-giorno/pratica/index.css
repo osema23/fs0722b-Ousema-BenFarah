@@ -1,0 +1,88 @@
+body {
+  margin: 0px;
+  background-color: rgb(128, 157, 211);
+}
+body nav {
+  background-color: rgb(5, 5, 65);
+}
+body nav .menu li {
+  padding: 15px;
+  display: inline-block;
+}
+body nav .menu li a {
+  text-decoration: none;
+  color: white;
+}
+body nav .menu li a:hover {
+  border-bottom: 1px solid white;
+}
+body main {
+  display: flex;
+}
+body main .d1 {
+  width: 60%;
+  padding-left: 50px;
+  padding-top: 15px;
+}
+body main .d1 span {
+  color: orange;
+}
+body main .d1 .text {
+  display: grid;
+  border: 1px solid black;
+  padding: 15px;
+}
+body main .d1 .text h3 {
+  position: fixed;
+  bottom: 330px;
+  left: 78px;
+  background-color: rgb(128, 157, 211);
+  width: 80px;
+}
+body main .d1 input {
+  margin: 3px;
+  width: 20%;
+}
+body main .d1 #t {
+  width: 30%;
+}
+body .d2 {
+  width: 40%;
+  text-align: center;
+  padding-top: 15px;
+}
+body .d2 div {
+  padding-top: 15px;
+  border-bottom: 1px solid black;
+  margin-right: 10px;
+}
+
+.b {
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.b {
+  background-color: purple;
+}
+.b:hover {
+  padding: 10px;
+}
+
+.d2 {
+  background-color: rgb(128, 157, 211);
+}
+@media only screen and (max-width: 680px) {
+  .d2 {
+    background: violet;
+  }
+}
+@media only screen and (max-width: 481px) {
+  .d2 {
+    background: rgb(109, 49, 109);
+  }
+}
+
+.d3 {
+  padding-left: 15px;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,110 @@
+@import 'variabili';
+body{ margin: $marg;
+    background-color: rgb(128, 157, 211);
+nav{
+    background-color: rgb(5, 5, 65);
+   
+
+.menu{
+    
+    li{
+       padding: $pad;
+       display: inline-block;
+       a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            border-bottom:1px solid white ;
+
+        }
+       }
+    }
+}
+}
+main{
+    display: flex;
+    
+    .d1{
+        width:60% ;
+        padding-left: 50px;
+        padding-top: $pad;
+        span{
+            color: orange;
+        }
+       .text{
+
+        display: grid;
+        border: 1px solid black;
+        padding: $pad;
+        h3{
+            position: fixed;
+            bottom: 330px;
+            left: 78px;
+            background-color: rgb(128, 157, 211);
+            
+            width: 80px;
+        }
+        }
+        
+        input{
+            
+            margin: 3px;
+            width: 20%;
+        }
+        #t{
+            width: 30%;
+        }
+       }
+    }
+    .d2{
+        width: 40%;
+        text-align: center;
+        padding-top:$pad;
+        div{
+            padding-top: $pad;
+            border-bottom: 1px solid black;
+            margin-right: 10px;
+        }
+    }
+}
+
+%bott{
+    padding: 5px;
+    border-radius: 25px;
+}
+.b{
+    @extend %bott;
+    background-color: purple;
+    &:hover{
+        padding: 10px;
+    }
+}
+@mixin devices ($breakpoint) {
+    @if $breakpoint == tablet {    
+        @media only screen and (max-width: 680px) {
+          @content;
+        }
+      }
+     
+      @if $breakpoint == mobile {
+        @media only screen and (max-width: 481px) {
+          @content;
+        }
+      }
+    }
+
+.d2 {
+    background-color: rgb(128, 157, 211);
+
+    @include devices(tablet) {
+        background:violet;
+       
+    }
+
+    @include devices(mobile) {
+        background: rgb(109, 49, 109);
+    }
+}
+.d3{
+    padding-left: 15px;
+}
