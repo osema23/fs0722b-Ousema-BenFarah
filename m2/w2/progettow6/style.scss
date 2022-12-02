@@ -1,0 +1,100 @@
+
+main{
+    font-family: 'Mulish', sans-serif;
+    h1{
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+footer{
+    font-family: 'Mulish', sans-serif;
+}
+
+nav{
+    background-color: $viola;
+        #w{
+            color: white;
+        }
+    svg{
+       width: $s;
+       height: $s;
+       margin: $marg;
+       color: $red;
+    }
+   p{
+    color: $red;
+    margin: $marg;
+   }
+    
+}
+
+.d1{
+    background-image: url(img/foto.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-top: 1%;
+    height: 500px;
+    button{
+        border-radius: 5px;
+        background-color:$violascuro;
+        color: white;
+        border: none;
+        height: $h;
+    }
+    img{
+        background-position: center;
+        width: 100%;
+    }
+}
+.row{
+    padding: $marg;
+    .col{
+        svg{
+         width: $h;
+         height:$h;
+         margin: 10px;
+        }
+    }
+}
+#cont3{
+    img{
+        width: 80px;
+        height: 50px;
+    }
+}
+.cent{
+    text-align: center;
+    padding-left: 10%;
+    padding-right:10% ;
+}
+.client{
+    text-align: center;
+    margin-bottom: 50px;
+    img{
+        width: $c;
+        height: $c;
+        border-radius: 50%;
+    }
+}
+footer{
+   
+    background-color: $violascuro;
+    #pad{
+        margin-top: 15px;
+    }
+    
+}
+#sf{
+    background-color: $grigio;
+#sfondo2{
+   .col-sm{
+    padding: $h;
+   }
+    svg{
+        width: $t;
+        height: $t;
+
+    }
+}
+}
+

@@ -1,0 +1,95 @@
+main {
+  font-family: "Mulish", sans-serif;
+}
+main h1 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+footer {
+  font-family: "Mulish", sans-serif;
+}
+
+nav {
+  background-color: rgb(116, 57, 235);
+}
+nav #w {
+  color: white;
+}
+nav svg {
+  width: 25px;
+  height: 25x;
+  margin: 10px;
+  color: red;
+}
+nav p {
+  color: red;
+  margin: 10px;
+}
+
+.d1 {
+  background-image: url(img/foto.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-left: 5%;
+  padding-top: 1%;
+  height: 500px;
+}
+.d1 button {
+  border-radius: 5px;
+  background-color: rgb(94, 26, 232);
+  color: white;
+  border: none;
+  height: 35px;
+}
+.d1 img {
+  background-position: center;
+  width: 100%;
+}
+
+.row {
+  padding: 10px;
+}
+.row .col svg {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+
+#cont3 img {
+  width: 80px;
+  height: 50px;
+}
+
+.cent {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.client {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.client img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: rgb(94, 26, 232);
+}
+footer #pad {
+  margin-top: 15px;
+}
+
+#sf {
+  background-color: #f5f5f5;
+}
+#sf #sfondo2 .col-sm {
+  padding: 35px;
+}
+#sf #sfondo2 svg {
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */
