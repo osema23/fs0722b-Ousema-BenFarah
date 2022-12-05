@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="text-center">Esercizio Giorno 1</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+</head>
+<body>
+    <table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Cognome</th>
+      <th scope="col">Anni</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<input type="text" name="usr" id="name">
+<input type="text" name="lastname id="lastname">
+<input type="date" name="data" id="date">
+<button id="Button">Entra</button>
+
+<script>
+    const NAME = document.getElementById("name");
+    const LASTNAME = document.getElementById("lastname");
+    const DATABORN = document.querySelector('input[type-"data"]');
+    const BUTTON = document.getElementById("Button");
+    const TABLE_TR = document.querySelectorAll("tr");
+    var CurrantDAta = new Date();
+    var IndexTable = 1;
+
+    console.log(CurrentData.getFullYear());
+    BUTTON.addEventListener ("click",function(){
+        if(NAME.value != "" && LASTNAME.value != "" && DATABORN.value != "undefined"){
+            TABLE_TR[IndexTable].innerHTML = `\n<td>${NAME.value}</td>\n<td>${LASTNAME.value}</td>\n<td>${CalculateAge(DATABORN.value)}</td>\n`;
+            NAME.value="";
+            LASTNAME.value="";
+            DATABORN.value="";
+            IndexTable++;
+        }
+        else{
+            CheckInput();
+        }
+    });
+
+    function CalculateAge(value){
+        var dob = new Date(value);
+        return CurranData.getFullYear() - dob.getFullYear();
+    }
+
+    const CheckInput = function(){
+        alert("devi inserire nome cognome e data di nascita");
+    }
+
+
+</script>
+</body>
+</html>
