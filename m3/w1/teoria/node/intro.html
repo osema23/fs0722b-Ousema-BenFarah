@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- problemi di javascript :
+    1. tende a diventare disordinato (e uindi difficile fare manutenzione)
+2. poca capacità di abbracciare le caratteristiche dell'orientamento ad oggetti 
+3. il controllo del tipo di dato
+4. non c'è controllo degli errori (non c'è debug in fase di compilazione) -> typescript "Typescript è javascript per lo sviluppo su scala di applicazioni" 
+DIFFERENZE 
+1. è un linguaggio foremente tipizzato (dichiaro i tipi di dati)
+2. è orientato ad oggetti
+3. è contemporaneamente un linguaggio e un insieme di strumenti Typescipt è javasript più alcune funzionalità aggiuntive Typescript (.ts) è un superset tipizzato di javascript (.js) Typescript viene COMPILATO in js (sono i file .js che aggancio poi al browser) 
+Dalle conoscenze basi di Javascript aggiungo sintassi dedicate di Typescript e poi compilo da .ts a .js 
+Il codice Typescript viene convertito nel suo equivalente javascript per essere eseguito 
+Il codice compilato è compatibile con qualsiasi  framework, libreria etc javascript esistente
+
+Perchè usare Typescript?
+- transpiler -> mentre interpreto il codice .ts per generare l'output .js ho il controllo degli errori 
+- strong static typing -> sia il controllo del tipo di dato, sia una sintassi per dedurlo o modificarlo 
+Componenti di Typescript
+- linguaggio (sintassi, keywortd, annotazioni di tipo )
+- Compiler (tsc) converte le istruzioni Typescript nell'equivalente Javascript
+- Typescript language service -> servizio che aiuta la compilazione del codice .ts
+DEBUG -> https://www.typescriptlang.org/play?#code/Q
+- qualsiasi script Javascript è anche codice Typescript valido (quindi  posso fare il passaggio gradualmente)
+Passaggi 
+1. salvo il file in formato .ts
+2. apro il terminale
+3. tsc + nome del file (controllo di essere nella cartella del file)
+4. node + nome del file .js (eseguo nel terminale il console.log)
+
+flag del compilatore 
+1. --help (stampa la guida)
+2. --watch (controlla le modifiche ai file e li ricompila)
+3. --module (carica moduli esterni)
+4. --target (imposta la versione ECMA di destinazione)
+5. --out (compila più file in un unico output)
+
+tsconfig.json
+https://www.typescriptlang.org/tsconfig
+https://www.typescriptlang.org/docs/handbook/tsconfig-json.htm
+watch -- https://www.typescriptlang.org/docs/handbook/configuring-watch.html
+
+alternativa è usare tsc + nome del file 
+posso compilare più file tsc file1.ts, file2.ts, file3.ts
+
+regole di sintassi basilari
+- nomenclatura degli identificatori (regole molto simili a js)
+-> possono includere caratteri e cifre ma non possono iniziare con una cifra
+-> non possono usare caratteristiche speciali ad eccezione di $ e _
+-> non possono essere parole chiave (switch, for, while, this, static, try, extends...)
+-> devono essere unici
+-> case sensitive (fa distinzione tra maiuscolo e minuscolo)
+-> non possono contenere spazi
+ ok -> firsName, first_name, num1, $result
+ ko ->Var, first name, first-name, 4number
+ - Typescript ignora gli spazi (uso spazi e tab per tenere il codice più oridnato)
+ - i ; sono facoltativi 
+ - i commenti possono essere single line // o multi riga /* */
+ Typescript è Javascript orientato agli oggetti 
+ -> consideriamo un programma come una raccolta di oggetti che comunicano tra loro tramite metodi
+ -> gli oggetti rappresentano un entità (hanno tra caratteristiche stato, comportamento ,identità)
+ -> gli oggetti hanno delle classi cioè dei modelli si cui vengono creati
+ -> gli oggetti hanno dei metodi per comunicare tra di loro
+
+ Tipi di dati  TypeScript 
+ - number - string - boolean -null - undefined
+ - void  -> assenza di valore -> lo uso quando una funzione non restituisce alcun valore;
+ function myFunc():void {
+    console.log("Messaggio")
+ }
+ -la uso sulle funzioni perché se dichiaro una variabile: void poi potrò assegnare solo valori null e undifined
+
+ -any -> la variabile contiene  qualsiasi tipo di dato (come javascript) 
+ var myVar:any = 123;
+ myVar = "una stringa";
+ myVar = true; // assume dinamicamente quualsiasi valore come in javascript
+  
+</body>
+</html>
