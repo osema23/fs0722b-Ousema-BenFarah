@@ -4,7 +4,11 @@ console.log(num);
 var num1 = 52 ;
 var num2 = 99 ;
 var num_1 = num-num1;
+var num_1=Math.abs(num_1)
+console.log(num_1)
 var num_2 = num-num2; 
+num_2=Math.abs(num_2)
+console.log(num_2)
 if(num1 == num){
     console.log("Il giocatore 1 ha azzeccato il numero")
 }
