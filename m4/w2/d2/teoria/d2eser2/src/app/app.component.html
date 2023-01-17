@@ -1,0 +1,32 @@
+<div class="container mt-3">
+  <h1  class="text-center">Reactive Form</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="form">
+        <div formGroupName="userInfo">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" formControlName="username">
+            <span  *ngIf="getFormC('userInfo.username')?.invalid && getFormC('userInfo.username')?.touched">
+            <ng-container *ngIf="getErrorsC('userInfo.username', 'required')">Campo username obbligatorio</ng-container>
+            <ng-container *ngIf="getErrorsC('userInfo.username', 'usernameProibito')">Username non consentito</ng-container>
+          </span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-cpntrol" formControlName="email">
+            <span  *ngIf="getFormC('userInfo.username')?.invalid && getFormC('userInfo.email')?.touched">
+              <ng-container *ngIf="getErrorsC('userInfo.email', 'required')">Campo username obbligatorio</ng-container>
+              <ng-container *ngIf="getErrorsC('userInfo.email', 'usernameProibito')">Username non consentito</ng-container>
+            </span>
+
+          </div>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
