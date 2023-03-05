@@ -10,18 +10,20 @@ import com.example.esercizio4.service.TavoloService;
 
 @Component
 public class TavoloRunner implements ApplicationRunner {
-	@Autowired TavoloService userService;
+	@Autowired
+	TavoloService userService;
+
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-  System.out.println("TavoloRunner...");
-  Tavolo t = new Tavolo();
-  t.setNumero(null);
-  t.setNumeroMassimoCoperti(6);
-  t.setOccupato(true);
-  
-  userService.insertTavolo(t);
-  System.out.println(t);
-  
+		System.out.println("TavoloRunner...");
+		Tavolo t = new Tavolo();
+		t.setNumero(null);
+		t.setNumeroMassimoCoperti(6);
+		t.setOccupato(true);
+
+		userService.insertTavolo(t);
+		System.out.println(t);
+
 	}
 
 }

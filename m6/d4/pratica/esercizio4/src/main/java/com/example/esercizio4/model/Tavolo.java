@@ -7,7 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name="Tavoli")
+@Table(name = "Tavoli")
 @Data
 @Builder
 @NoArgsConstructor
@@ -18,5 +18,5 @@ public class Tavolo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer numero;
 	private int numeroMassimoCoperti;
-	private Boolean occupato ;
+	private Boolean occupato;
 }
